@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Directory Structure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Directory Tree Section -->
+        <div class="directory-tree">
+            <h2>Linux Directory Structure</h2>
+            <ul>
+                <li><a href="#" data-dir="/bin" onclick="showExplanation(event)">/bin</a></li>
+                <li><a href="#" data-dir="/etc" onclick="showExplanation(event)">/etc</a></li>
+                <li><a href="#" data-dir="/home" onclick="showExplanation(event)">/home</a></li>
+                <li><a href="#" data-dir="/var" onclick="showExplanation(event)">/var</a></li>
+                <li><a href="#" data-dir="/usr" onclick="showExplanation(event)">/usr</a></li>
+                <li><a href="#" data-dir="/root" onclick="showExplanation(event)">/root</a></li>
+                <li><a href="#" data-dir="/tmp" onclick="showExplanation(event)">/tmp</a></li>
+                <li><a href="#" data-dir="/opt" onclick="showExplanation(event)">/opt</a></li>
+            </ul>
+        </div>
+
+        <!-- Explanation Pane -->
+        <div class="explanation-pane">
+            <h2>Directory Information</h2>
+            <p id="explanation-text">Click a directory to see its explanation.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

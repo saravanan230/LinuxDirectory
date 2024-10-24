@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container layout */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Directory Tree Styles */
+.directory-tree {
+    width: 30%;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.directory-tree h2 {
+    margin-bottom: 20px;
+}
+
+.directory-tree ul {
+    list-style-type: none;
+}
+
+.directory-tree li {
+    margin: 10px 0;
+}
+
+.directory-tree a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.directory-tree a:hover {
+    text-decoration: underline;
+}
+
+/* Explanation Pane Styles */
+.explanation-pane {
+    width: 70%;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.explanation-pane h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.explanation-pane p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #34495e;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .directory-tree,
+    .explanation-pane {
+        width: 100%;
+    }
+
+    .directory-tree ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .directory-tree li {
+        margin-right: 15px;
+    }
+}
